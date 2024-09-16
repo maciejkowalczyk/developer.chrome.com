@@ -10,9 +10,7 @@ tags:
 ---
 
 {% Aside %}
-
-**December 9, 2022:** The Manifest V2 deprecation timelines are under review and the experiments scheduled for early 2023 are being postponed. For more information, [read the update](https://groups.google.com/u/1/a/chromium.org/g/chromium-extensions/c/zQ77HkGmK9E) in the chromium-extensions Google Group.
-
+The Manifest V2 support timeline has been updated. See our [November 2023 blog post](/blog/resuming-the-transition-to-mv3/) and the [Manifest V2 support timeline page](/docs/extensions/mv3/mv2-sunset/) for details.
 {% endAside %}
 
 Recently, we announced changes to the Manifest V2 deprecation timeline, and while we remain firmly committed to Manifest V3 we acknowledge there is more work to do on our part.
@@ -24,13 +22,14 @@ Recently, we announced changes to the Manifest V2 deprecation timeline, and whil
 
 We are committed to closing the following gaps before announcing a new Manifest V2 deprecation timeline:
 
-1. **Support File Handling API on ChromeOS** as a replacement for [`chrome.fileBrowserHandler`](/docs/extensions/reference/fileBrowserHandler/).
-1. **User Script support:** Allow registering content scripts with arbitrary code with the new [userScripts API](/docs/extensions/reference/userscripts/). (See [our proposal](https://github.com/w3c/webextensions/blob/main/proposals/user-scripts-api.md) for details.)
-
 These issues have been collected based on feedback from partners, bug reports, and developers. In addition to these, we will continue our ongoing work to address stability issues and improve overall performance. 
+
+**There are currently no open issues considered a critical platform gap.**
 
 The following issues have recently been addressed:
 
+1. **Support for [File handling on ChromeOS](/docs/extensions/mv3/file_handling/)** as a replacement for [`chrome.fileBrowserHandler`](/docs/extensions/reference/fileBrowserHandler/) [Chrome 120].
+1. **User Script support:** Allow registering content scripts with arbitrary code with the new [userScripts API](/docs/extensions/reference/userscripts/) [Chrome 120]. 
 1. Additional **strong service worker keepalives** for certain operations taking longer than five minutes.
     * Added in Chrome 116 for `permissions.request()`, `desktopCapture.chooseDesktopMedia()`, `identity.launchWebAuthFlow()` and `management.uninstall()`.
     * Added in Chrome 118 for `chrome.debugger`

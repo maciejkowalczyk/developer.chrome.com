@@ -27,7 +27,10 @@ Once you've uploaded your extension, you will see it as an item in the dashboard
 </figure>
 
 {% Aside %}
-You cannot have more than 20 _extensions_ published on the Chrome Web Store. There is no such limit on the number of themes.
+You cannot have more than 20 _extensions_ published on the Chrome Web Store. There is no such limit on the number of themes. If you reach this limit, [you may request a limit increase][cws-support]. The Chrome Web Store staff will review your existing items and your developer account history, and if approved, you will be granted an increase. Please note that if your developer account has been suspended in the past, or you have had items taken down previously
+for policy violations, or your items consistently receive low quality ratings, your request may be
+denied.
+
 {% endAside %}
 
 ## Fill out information about your item {: #info }
@@ -65,9 +68,9 @@ is complete.
 If you submit your item to publish automatically after review, you can still choose deferred publishing by selecting the **Defer publish** option located in the item's menu.
 
 <figure>
-    {% Img src="image/BhuKGJaIeLNPW9ehns59NfwqKxF2/s58dN9mMogWe5W900eD4.png",
-    alt="Screenshot of defer publish option in the 'more' menu", width="286", height="184", class='screenshot' %}
-  <figcaption>
+{% Img src="image/SHhb2PDKzXTggPGAYpv8JgR81pX2/yoMNFt1ht6qSLXzFyrWj.png",
+       alt="Screenshot showing the 'more' menu's defer publish option", width="286", height="184", class='screenshot' %}
+   <figcaption>
     Deferred publishing option in the items menu 
   </figcaption>
 </figure>
